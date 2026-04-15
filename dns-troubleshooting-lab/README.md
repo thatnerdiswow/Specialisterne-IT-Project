@@ -15,7 +15,7 @@ If DNS settings are misconfigured, domain names will fail to resolve, preventing
 - ipconfig
 - ping
 - Network Adapter Settings
-- Wireshark
+- Wireshark (optional)
 
 ## Steps Taken
 1. Manually changed DNS settings to an invalid IP address.
@@ -33,5 +33,8 @@ If DNS settings are misconfigured, domain names will fail to resolve, preventing
 - DNS resolution failed when misconfigured
 - Issue was resolved after correcting DNS settings
 
+## Environmental Restrictions
+Due to network restrictions, DNS settings could not be manually modified on the system. This reflects real-world environments where administrative controls or ISP configurations limit direct changes.
+
 ## Conclusion
-The issue was caused by incorrect DNS configuration, demonstrating how DNS failures can disrupt access even when the network is connected.
+The issue was caused by incorrect DNS configuration, demonstrating how DNS failures can disrupt access even when the network is connected. Even without direct modification, this project demonstrates the diagnostic process used to identify DNS-related issues. It highlights the importance of testing both IP connectivity and domain resolution when troubleshooting network problems.
