@@ -1,9 +1,11 @@
 # Nintendo Switch NAT Troubleshooting Guide
 
 ## Overview
+
 This guide was created after troubleshooting multiplayer connectivity issues within an online gaming group. The primary issue involved users experiencing disconnects and failed peer-to-peer connections due to restrictive NAT settings and CGNAT environments.
 
 The goal of this project was to:
+
 - Help users identify their NAT type
 - Explain how NAT affects Nintendo Switch multiplayer connectivity
 - Document potential solutions and workarounds
@@ -16,6 +18,7 @@ The goal of this project was to:
 One user consistently disconnected during multiplayer sessions despite having a stable internet connection.
 
 ### Symptoms
+
 - Unable to reliably join peer-to-peer lobbies
 - Frequent disconnects during gameplay
 - Unable to host multiplayer sessions
@@ -72,6 +75,7 @@ The ISP also declined providing a private IP assignment for the Nintendo Switch.
 CGNAT allows multiple users to share a single public IP address. While efficient for ISPs, it can create issues for peer-to-peer gaming connections.
 
 This can lead to:
+
 - Restricted inbound traffic
 - Difficulty establishing direct console-to-console communication
 - Increased disconnects in multiplayer games
@@ -107,6 +111,7 @@ Further testing would be required to determine long-term stability and effective
 ## Skills Demonstrated
 
 This project demonstrates:
+
 - Networking fundamentals
 - NAT and CGNAT troubleshooting
 - Technical research and analysis
@@ -120,6 +125,7 @@ This project demonstrates:
 ## Lessons Learned
 
 This troubleshooting experience reinforced the importance of:
+
 - Understanding NAT behavior in gaming environments
 - Identifying infrastructure-side limitations
 - Communicating technical concepts clearly to non-technical users
