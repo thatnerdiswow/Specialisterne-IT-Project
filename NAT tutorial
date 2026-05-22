@@ -1,0 +1,128 @@
+# Nintendo Switch NAT Troubleshooting Guide
+
+## Overview
+This guide was created after troubleshooting multiplayer connectivity issues within an online gaming group. The primary issue involved users experiencing disconnects and failed peer-to-peer connections due to restrictive NAT settings and CGNAT environments.
+
+The goal of this project was to:
+- Help users identify their NAT type
+- Explain how NAT affects Nintendo Switch multiplayer connectivity
+- Document potential solutions and workarounds
+- Practice real-world networking troubleshooting and technical communication
+
+---
+
+## Problem
+
+One user consistently disconnected during multiplayer sessions despite having a stable internet connection.
+
+### Symptoms
+- Unable to reliably join peer-to-peer lobbies
+- Frequent disconnects during gameplay
+- Unable to host multiplayer sessions
+- Inconsistent matchmaking and connectivity
+
+After running connection tests, the affected user was identified as having **NAT Type D**.
+
+---
+
+## Checking Your NAT Type on Nintendo Switch
+
+1. Open **System Settings**
+2. Navigate to **Internet**
+3. Select **Test Connection**
+4. Wait for the connection test to complete
+5. Review your NAT Type in the results screen
+
+### Example
+
+![Connection Test Menu](images/connection-test-menu.png)
+
+![NAT Type Results](images/nat-type-results.png)
+
+---
+
+## NAT Type Reference
+
+| NAT Type | Connectivity |
+|----------|--------------|
+| A | Best connectivity |
+| B | Good connectivity |
+| C | Moderate restrictions |
+| D | Strict restrictions / multiplayer issues likely |
+| F | Connection failure |
+
+---
+
+## Root Cause Investigation
+
+Further troubleshooting revealed the affected user was connected through a **CGNAT (Carrier-Grade NAT)** network managed by their ISP.
+
+Because the network infrastructure was shared across multiple users, the ISP restricted NAT modifications for security reasons.
+
+### ISP Response
+
+> "By permitting liberal NAT settings, we would risk the security of the entire network and its users and unfortunately, requires far too many ports to be opened for the consoles/games internet features to function correctly. Therefore, we cannot guarantee the efficacy of our firewall for your network. As such, at this time we do not support NAT-type changes for gaming consoles, and I will be closing your ticket."
+
+The ISP also declined providing a private IP assignment for the Nintendo Switch.
+
+---
+
+## Why CGNAT Causes Problems
+
+CGNAT allows multiple users to share a single public IP address. While efficient for ISPs, it can create issues for peer-to-peer gaming connections.
+
+This can lead to:
+- Restricted inbound traffic
+- Difficulty establishing direct console-to-console communication
+- Increased disconnects in multiplayer games
+- Limited hosting capability
+
+Nintendo Switch multiplayer functionality relies heavily on peer-to-peer networking, making restrictive NAT environments problematic.
+
+---
+
+## Troubleshooting Steps Attempted
+
+The following troubleshooting steps and workarounds were discussed or tested:
+
+- Running Nintendo Switch connection tests
+- Identifying NAT types
+- Restarting network hardware
+- Testing alternative hosts
+- Mobile hotspot testing
+- Considering wired Ethernet connections
+- Investigating DNS and gateway configurations
+- Researching VPN/tunneled connection solutions
+
+---
+
+## Potential Workaround
+
+One proposed workaround involved routing the affected user's traffic through another trusted network connection to bypass restrictive CGNAT limitations and assign a different public-facing IP path for multiplayer sessions.
+
+Further testing would be required to determine long-term stability and effectiveness.
+
+---
+
+## Skills Demonstrated
+
+This project demonstrates:
+- Networking fundamentals
+- NAT and CGNAT troubleshooting
+- Technical research and analysis
+- Peer-to-peer networking concepts
+- Problem-solving under real-world constraints
+- Technical documentation and communication
+- Collaborative troubleshooting within a user community
+
+---
+
+## Lessons Learned
+
+This troubleshooting experience reinforced the importance of:
+- Understanding NAT behavior in gaming environments
+- Identifying infrastructure-side limitations
+- Communicating technical concepts clearly to non-technical users
+- Systematically narrowing down potential causes during troubleshooting
+
+It also provided hands-on exposure to practical networking issues beyond simulated lab environments.
