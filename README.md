@@ -13,3 +13,7 @@ This repository contains hands-on labs demonstrating troubleshooting and network
 - DNS Troubleshooting Lab
   
   DNS issues prevent domain names from resolving to IP addresses, making websites inaccessible despite an active internet connection. This disrupts normal network usage and can indicate misconfiguration or potential network-related faults.
+
+- Nintendo Switch NAT Tutorial
+  
+  This guide was created after troubleshooting multiplayer connectivity issues within an online gaming group I am a part of. The primary issue involved users experiencing disconnects and failed peer-to-peer connections due to restrictive NAT settings and CGNAT environments.
